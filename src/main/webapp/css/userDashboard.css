@@ -1,0 +1,343 @@
+@charset "ISO-8859-1";
+/* General Styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+header {
+    width: 100%;
+    
+}
+
+.navbar{
+	
+	right: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #2e3b4e;
+}
+.navbar2{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+    background-color: #E5E4E2;
+   	z-index: 6;
+    box-shadow:30px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar2 .brand {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #2e3b4e;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar2 .brand:hover {
+    background-color: #fff;
+    color: #2e3b4e;
+}
+
+.navbar2 .search-bar {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: 2px solid #2e3b4e;
+}
+.search-bar:focus {
+    outline: 2px solid #2e3b4e; /* Change outline color on focus */
+    outline-offset: 2px; /* Optional: Add space between the outline and the element */
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+}
+.navbar .nav-links a:hover {
+    color:black;
+    transition: all 0.8s ease-in-out;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+	z-index: 8;
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sidebar .profil img{
+	text-align: center;
+	border-radius: 50%;
+	font-size: 30px;
+	padding: 20px;
+	background-color:white;
+	color: #fff;
+	width: 150px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+ 
+.sidebar .sidebar-links {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .sidebar-links li {
+    margin-bottom: 10px;
+}
+
+.sidebar .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: #2e3b4e;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar .sidebar-links a:hover {
+    background-color:  #ddd;
+    color:#1e2a3e;
+    transition: 1s;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.main-content h1 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dashboard .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    margin-bottom: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    
+}
+.dashboard .card:hover {
+    background-color: #ffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    background-color: #ddd;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+    /* Ellipsis Icon Styles */
+      .ellipsis-icon {
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            font-size: 1.5em;
+            color: #777;
+            cursor: pointer;
+        }
+
+.dashboard .card img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.dashboard .card-content{
+	display: flex;
+}
+
+.dashboard .content1, .content2 {
+    padding: 15px;
+}
+
+.dashboard .content1 h3 {
+    margin-top: 0;
+    font-size: 1em;
+}
+
+.dashboard .content1 p {
+    color: #6082B6;
+    
+}
+
+.dashboard .content2 .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #2e3b4e;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.dashboard .content2 .btn:hover {
+    background-color: #1e2a3e;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .dashboard .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard .card {
+        flex: 1 1 calc(100% - 20px);
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .navbar .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard .card {
+        margin: 10px 0;
+    }
+
+    .navbar,.navbar2 {
+        flex-direction: column;
+    }
+
+    .navbar2 .search-bar {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+/* Footer */
+.footer {
+    background-color: #2e3b4e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #1e2a3e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 10px;
+    }
+}
+
